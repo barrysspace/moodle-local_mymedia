@@ -107,7 +107,7 @@ if ($data = data_submitted() and confirm_sesskey()) {
     }
 }
 
-$context = get_context_instance(CONTEXT_USER, $USER->id);
+$context = context_user::instance($USER->id);
 
 require_capability('local/mymedia:view', $context, $USER);
 
@@ -120,7 +120,7 @@ if ($enabled) {
         if (!$connection) {
             throw new Exception("Unable to connect");
         }
- 
+
         // Required by screen recorder
         $login_session = $connection->getKs();
 
