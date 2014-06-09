@@ -37,7 +37,6 @@ class local_mymedia_renderer extends plugin_renderer_base {
      * @return HTML markup
      */
     public function create_vidoes_table($video_list = array()) {
-        global $OUTPUT;
 
         $output      = '';
         $max_columns = 3;
@@ -168,7 +167,7 @@ class local_mymedia_renderer extends plugin_renderer_base {
         if (has_capability('local/mymedia:upload', $context, $USER)) {
             $upload = $this->create_upload_markup();
         }
- 
+
         if ($enable_ksr && has_capability('local/mymedia:screenrecorder', $context, $USER)) {
             $screenrec = $this->create_screenrecorder_markup($partner_id, $login_session);
         }
@@ -205,7 +204,6 @@ class local_mymedia_renderer extends plugin_renderer_base {
     }
 
     public function create_options_table_lower($page) {
-        global $USER;
 
         $output = '';
 
