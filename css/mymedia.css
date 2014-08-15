@@ -11,6 +11,32 @@
     max-height: 100%;
 }
 
+table#mymedia_courses_table {
+    max-height: 100%;
+    overflow: scroll;
+}
+
+#mymedia_course_list {
+    max-height: 400px;
+}
+
+table#mymedia_courses_table td.mymedia.course.checkbox.table.col{
+    width: 30px;
+    max-height: 100%;
+}
+
+table#mymedia_courses_table td.mymedia.course.checkbox.table.col.name{
+    width: 480px;
+    max-height: 100%;
+}
+
+table#mymedia_courses_table td.mymedia.course.checkbox input[type="checkbox"]{
+    width: 30px;
+    max-height: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
 table#mymedia_video_metadata_table tr {
     vertical-align: top;
 }
